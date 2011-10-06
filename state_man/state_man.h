@@ -6,14 +6,16 @@
 
 struct State{
 	//...
-	State *rightState;
-	State *leftState;
+	//State *rightState;
+	State *prevState;
 };
 
 class StateMan{
 		State *stateCicleList;
 	public:
-		StateMan();
+		StateMan(){
+			
+		}
 		~StateMan();
 		addState();
 		remState();
