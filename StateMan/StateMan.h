@@ -4,29 +4,24 @@
 #ifndef STATE_MAN_H
 #define STATE_MAN_H
 
-struct State
-{
-	//...
-	//State *rightState;
-	State *prevState;
-};
-
 class StateMan
 {
-		//State *stateStack;
+	State *CurState;
 	public:
 		StateMan()
 		{
 			MainState=NULL;
 			NextState=STATE_NONE;
+			CurState=new State;
+			CurState=MainState;
 		}
 		~StateMan()
 		{
 			
 		}
-		addState();
-		remState();
-		switchState();
+		bool addState();
+		bool remState();
+		bool switchState();
 };
 
 
