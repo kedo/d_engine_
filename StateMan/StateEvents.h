@@ -1,0 +1,20 @@
+#ifndef STATE_EVENTS_H
+#define STATE_EVENTS_H
+
+namespace game
+{
+	enum EVENTS{
+		EVENT_SWITCH_STATE=1,
+		EVENT_SWITCH_NEXTSTATE
+	};
+	
+	enum STATES{
+		STATE_NONE=123,
+		STATE_MAINMENU,
+		STATE_LOADER,
+		STATE_OPTIONS
+	};
+};
+
+
+#endif
